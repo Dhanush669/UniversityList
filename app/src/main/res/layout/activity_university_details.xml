@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp"
+    android:id="@+id/detCardView"
+    tools:context=".UniversityDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="College Name"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:id="@+id/CollegeName"
+                android:textColor="#000000"
+                >
+            </TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country :"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:id="@+id/country"
+            android:textStyle="normal"
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:textColor="#707070"
+            >
+        </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State :"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                >
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="state"
+                android:textStyle="normal"
+                android:layout_marginStart="10dp"
+                android:textSize="18sp"
+                android:id="@+id/state"
+                android:textColor="#707070"
+                >
+            </TextView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="open college website.."
+            android:textStyle="normal"
+            android:layout_margin="10dp"
+            android:textSize="16sp"
+            android:textColor="#0027FF"
+            android:onClick="open"
+            >
+        </TextView>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
